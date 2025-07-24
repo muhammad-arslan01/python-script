@@ -1,0 +1,58 @@
+{
+    "topical_map": {
+        "pillar_pages": [
+            {
+                "topic": "SEO Strategy",
+                "target_keyword": "comprehensive SEO guide",
+                "intent": "Informational",
+                "recommended_content_type": "Guide"
+            }
+        ],
+        "cluster_pages": [
+            {
+                "topic": "Keyword Research",
+                "target_keyword": "keyword research tools",
+                "parent_pillar": "SEO Strategy",
+                "intent": "Commercial"
+            }
+        ]
+    },
+    "priority_topics": [
+        {
+            "topic": "AI Content Optimization",
+            "target_keyword": "AI content strategy 2025",
+            "search_volume": 18500,
+            "competition_score": 0.42,
+            "supporting_keywords": [
+                "AI content tools",
+                "content automation SEO",
+                "GPT-4 content creation"
+            ],
+            "content_type": "Comprehensive Guide",
+            "eeat_priority": true,
+            "trend_score": 0.92
+        },
+        {
+            "topic": "Voice Search SEO",
+            "target_keyword": "voice search optimization",
+            "search_volume": 12400,
+            "competition_score": 0.38,
+            "supporting_keywords": [
+                "voice search keywords",
+                "smart speaker SEO",
+                "voice search schema"
+            ],
+            "content_type": "Interactive Tutorial",
+            "trend_score": 0.87
+        }
+    ],
+    "content_gaps": [
+        {
+            "topic": "Voice Search Optimization",
+            "opportunity": 0.85
+        }
+    ],
+    "update_recommendations": [
+        "Add schema markup for key topics"
+    ]
+}
