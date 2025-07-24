@@ -29,6 +29,7 @@ async def generate_topical_map(industry_data: Dict[str, Any], algorithm_updates:
     2. "priority_topics": List of dicts with "topic" and "intent"
     3. "content_gaps": List of dicts with "topic" and "opportunity" (float between 0-1)
     4. "update_recommendations": List of strategy strings
+    5. "post_titles": List of dicts with "topic" and "titles" (3-5 SEO-friendly titles per topic)
 
     Guidelines:
     - Create a comprehensive topical map with 3 hierarchy levels
@@ -40,10 +41,12 @@ async def generate_topical_map(industry_data: Dict[str, Any], algorithm_updates:
     - Ensure EEAT principles are incorporated
     - Consider voice search optimization strategies
     - Account for AI-generated content best practices
+    - Generate 3-5 engaging, click-worthy post titles for EACH priority topic and content gap
+    - Titles should be 60-70 characters max, include power words, and target commercial/intent signals
     """
     
     # Claude API request
-    async with httpx.AsyncClient(timeout=30.0) as client:
+    async with httpx.AsyncClient(timeout=300.0) as client:
         response = await client.post(
             "https://api.anthropic.com/v1/messages",
             headers={
@@ -103,6 +106,13 @@ async def main():
     print("\nUpdate Recommendations:")
     for rec in result['update_recommendations']:
         print(f"- {rec}")
+
+     # New section for printing post titles
+    print("\nPost Titles:")
+    for item in result['post_titles']:
+        print(f"\nTopic: {item['topic']}")
+        for idx, title in enumerate(item['titles'], 1):
+            print(f"  {idx}. {title}")    
 
 if __name__ == "__main__":
     asyncio.run(main())
