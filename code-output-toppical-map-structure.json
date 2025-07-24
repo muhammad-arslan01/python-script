@@ -1,0 +1,53 @@
+{
+    "chiropractic care": {
+      "spinal alignment": {
+        "chiropractic adjustments": {},      
+        "postural correction": {},
+        "vertebral subluxation": {}
+      },
+      "non-invasive pain management": {      
+        "spinal decompression therapy": {},  
+        "cold laser therapy": {},
+        "acupuncture": {}
+      },
+      "chiropractic care for desk workers": {
+        "ergonomic workstation setup": {},   
+        "stretches for office workers": {},
+        "preventing tech neck": {}
+      }
+    },
+    "back pain relief": {
+      "drug-free treatment options": {
+        "massage therapy": {},
+        "physical therapy exercises": {},
+        "yoga for back pain": {}
+      },
+      "lifestyle modifications": {
+        "proper lifting techniques": {},
+        "sleep positions for back pain": {},
+        "anti-inflammatory diet": {}
+      },
+      "alternative therapies": {
+        "acupressure": {},
+        "herbal remedies": {},
+        "mind-body techniques": {}
+      }
+    },
+    "ergonomic health tips": {
+      "workspace ergonomics": {
+        "standing desks": {},
+        "ergonomic office chairs": {},
+        "monitor positioning": {}
+      },
+      "body mechanics": {
+        "good posture habits": {},
+        "taking frequent breaks": {},
+        "stretching routines": {}
+      },
+      "preventing repetitive strain": {
+        "proper typing technique": {},
+        "using ergonomic peripherals": {},
+        "avoiding prolonged sitting": {}
+      }
+    }
+  }

@@ -73,13 +73,19 @@ async def generate_topical_map(industry_data: Dict[str, Any], algorithm_updates:
 
 async def main():
     industry_data = {
-        "core_keywords": ["SEO", "content marketing"],
-        "industry": "Digital Marketing",
+        "core_keywords": ["chiropractic care", "spinal alignment", "back pain relief"],
+        "industry": "Health & Wellness",
         "geo_targets": ["US", "UK"],
-        "emerging_topics": ["AI content creation", "voice search optimization"]
+        "emerging_topics": [
+            "non-invasive pain management", 
+            "ergonomic health tips", 
+            "chiropractic care for desk workers", 
+            "drug-free treatment options"
+        ]
     }
 
-    algorithm_updates = ["EEAT Update", "Core Web Vitals Boost"]
+    algorithm_updates = ["Helpful Content Update", "Your Money Your Life (YMYL) Guidelines Boost"]
+
     result = await generate_topical_map(industry_data, algorithm_updates)
 
     # Print results in the specified format
